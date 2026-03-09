@@ -1,12 +1,12 @@
 export const setupCosts = [
-  { item: "Activacion del sistema", value: 4200000, iva: true },
-  { item: "Integracion canal web", value: 380000, iva: true },
-  { item: "Integracion WhatsApp Business API", value: 380000, iva: true },
-  { item: "Integracion Facebook", value: 380000, iva: true },
-  { item: "Integracion Instagram", value: 380000, iva: true },
-  { item: "Despliegue en app (opcional)", value: 1500000, iva: true },
-  { item: "Avatar predisenado", value: 180000, iva: true },
-  { item: "Avatar a medida", value: 820000, iva: true }
+  { item: "Activacion del sistema", value: 4200000, iva: false },
+  { item: "Integracion canal web", value: 380000, iva: false },
+  { item: "Integracion WhatsApp Business API", value: 380000, iva: false },
+  { item: "Integracion Facebook", value: 380000, iva: false },
+  { item: "Integracion Instagram", value: 380000, iva: false },
+  { item: "Despliegue en app (opcional)", value: 1500000, iva: false },
+  { item: "Avatar predisenado", value: 180000, iva: false },
+  { item: "Avatar a medida", value: 820000, iva: false }
 ];
 
 export const monthlyUsage = [
