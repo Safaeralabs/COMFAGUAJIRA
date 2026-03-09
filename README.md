@@ -1,40 +1,64 @@
-# COMFAGUAJIRA Chatbot MVP
+# COMFAGUAJIRA Chatbot
 
-Demo comercial frontend-only para presentar el asistente virtual multicanal de COMFAGUAJIRA.
+Asistente virtual multicanal para atencion 24/7.  
+Este repositorio contiene un **MVP demo comercial frontend-only**, diseñado para presentar a cliente una experiencia completa de atencion digital omnicanal para COMFAGUAJIRA.
 
-## Stack
+## Resumen ejecutivo
+
+El MVP muestra, de forma visual y navegable, como funcionaria una operacion real en:
+
+- Sitio Web
+- WhatsApp
+- Instagram
+- TikTok
+- Bandeja unificada de atencion
+- Dashboard BI
+- Vista de costos comerciales
+
+Objetivo de negocio: demostrar reduccion de tiempos de respuesta, mayor automatizacion, mejor experiencia del afiliado y control operativo para el equipo de atencion.
+
+## Que se puede demostrar en la reunion
+
+1. Atencion automatizada 24/7 con escalamiento a asesor humano.
+2. Centralizacion de conversaciones en una sola bandeja omnicanal.
+3. Clasificacion por intencion, sentimiento y estado del caso.
+4. Analitica ejecutiva para toma de decisiones.
+5. Escenarios de costos para propuesta comercial (Piloto, Multicanal, Full).
+
+## Vistas del demo
+
+- `/` Inicio: propuesta de valor, beneficios, canales y KPIs.
+- `/demo-web`: experiencia del cliente en portal web con widget flotante.
+- `/whatsapp`: simulador de conversaciones con escenarios y etiquetas.
+- `/instagram`: simulador DM con intencion y sentimiento.
+- `/tiktok`: modelo de captacion y derivacion a canales de conversion.
+- `/inbox`: bandeja del asesor (CRM/helpdesk) con filtros y timeline.
+- `/analytics`: indicadores y graficas ejecutivas.
+- `/costos`: estructura de costos y paquetes comerciales.
+
+## Cliente vs Operacion interna
+
+- Vistas de experiencia del cliente:
+  - `/demo-web`
+  - `/whatsapp`
+  - `/instagram`
+  - `/tiktok`
+- Vistas de operacion interna:
+  - `/inbox` (asesores)
+  - `/analytics` (coordinacion/gerencia)
+  - `/costos` (equipo comercial)
+
+## Stack tecnologico
 
 - Next.js 14 (App Router)
 - React + TypeScript
 - Tailwind CSS
-- Componentes estilo shadcn/ui (locales)
+- Componentes UI reutilizables (estilo shadcn/ui)
 - lucide-react
 - Recharts
 - Framer Motion
 
-## Que incluye el MVP
-
-- Landing / Home con propuesta de valor y KPIs
-- Demo Web con widget de chat flotante
-- Simulador WhatsApp con escenarios y etiquetas
-- Simulador Instagram DM con intencion y sentimiento
-- Simulador TikTok para captacion y derivacion
-- Bandeja unificada omnicanal (estilo CRM/helpdesk)
-- Dashboard BI / analitica con graficas
-- Vista de costos y escenarios comerciales
-
-## Rutas
-
-- `/` Inicio
-- `/demo-web`
-- `/whatsapp`
-- `/instagram`
-- `/tiktok`
-- `/inbox`
-- `/analytics`
-- `/costos`
-
-## Estructura
+## Estructura del proyecto
 
 ```txt
 app/
@@ -49,30 +73,25 @@ types/
 public/
 ```
 
-## Instalacion
+## Ejecucion local
 
 ```bash
 npm install
-```
-
-## Desarrollo
-
-```bash
 npm run dev
 ```
 
-Abrir `http://localhost:3000`.
+Abrir: `http://localhost:3000`
 
-## Build de produccion
+Build de produccion:
 
 ```bash
 npm run build
 npm run start
 ```
 
-## Mock data
+## Mock data editable
 
-Los datos del MVP se editan en:
+Todos los datos del MVP son locales y editables:
 
 - `data/conversations.ts`
 - `data/users.ts`
@@ -81,19 +100,10 @@ Los datos del MVP se editan en:
 - `data/intents.ts`
 - `data/campaigns.ts`
 
-## Modulos principales
+## Aclaraciones
 
-- `app/demo-web/page.tsx`: simulacion de chat en sitio web institucional.
-- `app/whatsapp/page.tsx`: mockup de telefono y escenarios de WhatsApp.
-- `app/instagram/page.tsx`: flujo de DM con clasificacion de intencion.
-- `app/tiktok/page.tsx`: demo conceptual de captacion y CTA a canales de conversion.
-- `app/inbox/page.tsx`: bandeja omnicanal con filtros y panel de agente.
-- `app/analytics/page.tsx`: KPIs y graficas ejecutivas.
-- `app/costos/page.tsx`: propuesta comercial de costos y escenarios.
-
-## Notas
-
-- No hay backend real.
-- No hay autenticacion real.
-- No hay base de datos real.
-- Todo funciona con datos mock locales.
+- No incluye backend real.
+- No incluye autenticacion real.
+- No incluye integraciones API reales.
+- No incluye base de datos real.
+- El enfoque es comercial y de validacion de experiencia.
